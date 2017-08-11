@@ -43,11 +43,11 @@ class Token: CustomStringConvertible, CustomDebugStringConvertible {
     }
     
     var description: String {
-        return "\(type) \(lexeme) \(literal)"
+        return "\(type) \(lexeme) \(String(describing: literal))"
     }
     
     var debugDescription: String {
-        return "\(type) \(lexeme) \(literal)"
+        return "\(type) \(lexeme) \(String(describing: literal))"
     }
     
 }
